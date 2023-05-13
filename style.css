@@ -1,0 +1,156 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@300;400&display=swap');
+
+body{
+    font-family:'Mulish', sans-serif;
+    
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.container {
+   max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Настройки шапки */
+header{
+    background-color: rgb(17, 17, 17); 
+    padding: 25px;
+}
+.header_section{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.header_img{
+    display: flex;
+    margin-right: 0 ; 
+    gap: 20px;
+
+}
+.header_logo{
+    
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 33px;
+    margin:0 auto;
+    margin-right: 46%;
+}
+
+/* Настройки banner */
+.bacgroung_banner {
+    background-image: url('/images/backgroundBaner.jpg'); 
+    background-size: 100% auto;
+    background-size: cover;
+  background-repeat: no-repeat;
+
+    /* background-repeat:unset; */
+    height: 840px; 
+    
+}
+.banner_text{
+    max-width: 750px;
+    padding-top: 170px;
+    
+}
+.banner_mainText{
+    font-size: 72px;
+    font-weight: 500;
+}
+.banner_secondText{
+    padding-top: 25px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+  /* Настройки кнопки Контакты */
+  .border-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 50px 0px;
+    position: relative;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .border-button:before, .border-button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .border-button:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+  }
+  .border-button:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+  }
+  .border-button:hover:before, 
+  .border-button:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  .border-button:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+  }
+  .border-button:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+  }
+  .border-button:hover {
+    background: rgba(255, 255, 255, .2);
+  }
+
+
+/* Настройки кнопки Цитаты */
+.Citation{
+    width: 100%;
+    height: auto;
+    background-color:#222222 ;
+   
+    
+}
+.Citation_text{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 50px;
+    text-align:center;
+}
+.ChatGpt{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
