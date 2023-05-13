@@ -20,7 +20,7 @@ a{
 
 /* Настройки шапки */
 header{
-    background-color: rgb(17, 17, 17); 
+    background-color: #222222; 
     padding: 25px;
 }
 .header_section{
@@ -141,7 +141,7 @@ justify-content: space-between;
     font-weight: 300;
 }
 
-/* Настройки  Проктов*/
+/* Настройки  Проектов*/
 
 .gallery{
     background-color: #333333;
@@ -149,7 +149,7 @@ justify-content: space-between;
 }
 
 .gallery h1{
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   font-size: 40px;
 }
 .gallery_gif {
@@ -170,7 +170,7 @@ justify-content: space-between;
   
 }
 
-
+/* Настройки Услуги */
 .services_img {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +184,7 @@ justify-content: space-between;
 
 .services h2{
   font-size: 20px;
+  
 }
 
 .services img {
@@ -205,11 +206,16 @@ justify-content: space-between;
     margin-right: 10px;
   }
 }
-
+/* Настройки Подвала */
 footer {
   background-color: #222222;
   padding: 20px 0;
-  text-align: center;
+  /* text-align: center; */
+}
+.footer_container{
+  max-width: 1500px;
+  margin: 0  auto;
+  
 }
 .container-row {
   display: flex;
@@ -225,8 +231,9 @@ footer {
   margin-top: 10px;
 }
 
-footer h1 {
+.container-row h1, .container-column h1 {
   font-size: 24px;
+  font-family: 'Merriweather', serif;
   margin: 0 10px;
   color: #ffffff;
 }
@@ -237,6 +244,14 @@ footer h1 {
 
 .container-column h1 {
   display: inline-block;
+}
+.footer-text {
+  
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-align: right;
+  color: #ffffff;
 }
 
 
