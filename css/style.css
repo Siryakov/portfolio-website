@@ -15,6 +15,7 @@ a{
 .container {
    max-width: 1500px;
     margin: 0 auto;
+    
 }
 
 /* Настройки шапки */
@@ -49,8 +50,6 @@ justify-content: space-between;
     background-size: 100% auto;
     background-size: cover;
   background-repeat: no-repeat;
-
-    /* background-repeat:unset; */
     height: 840px; 
     
 }
@@ -81,7 +80,6 @@ justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, .4);
     background: none;
     font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -124,7 +122,7 @@ justify-content: space-between;
   }
 
 
-/* Настройки кнопки Цитаты */
+/* Настройки Цитаты */
 .Citation{
     width: 100%;
     height: auto;
@@ -141,6 +139,104 @@ justify-content: space-between;
 .ChatGpt{
     font-size: 20px;
     font-weight: 300;
+}
+
+/* Настройки  Проктов*/
+
+.gallery{
+    background-color: #333333;
+    padding-top: 50px;
+}
+
+.gallery h1{
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.gallery_gif {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.gallery_gif img {
+  width: 600px; 
+  height: 500px; 
+  border-radius: 15px;
+}
+
+.services{
+  background-color: #333333;
+  padding-top: 50px;
+  
+}
+
+
+.services_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services h1, .services h2{
+  text-align: right;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.services h2{
+  font-size: 20px;
+}
+
+.services img {
+  height: 350px ;
+  width: 550px ;
+}
+.services_img > div {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.services_img > div:last-child {
+  margin-right: 0;
+}
+@media (max-width: 900px) {
+  .services_img > div {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 10px;
+  }
+}
+
+footer {
+  background-color: #222222;
+  padding: 20px 0;
+  text-align: center;
+}
+.container-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer h1 {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.container-row h1 {
+  display: inline-block;
+}
+
+.container-column h1 {
+  display: inline-block;
 }
 
 
