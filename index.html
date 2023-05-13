@@ -31,7 +31,7 @@
                     <H1 class="banner_mainText">Программист из</br> Нижнего Новгорода</H1>
                     <h2 class="banner_secondText">Здесь вы найдете коллекцию моих работ по программированию и сможете связаться со мной. </br>Меня зовут Кирилл Сиряков, и я специализируюсь на разработке декстопных программ на языках C++, Java Python. </h2>
                </div>
-               <a href="" class="border-button">Контакты</a>
+               <a href="#" class="border-button" title="Контакты"  onclick="slowScroll('#img_link')">Контакты</a>
             </div>
             
        </div>
@@ -89,22 +89,6 @@
         </div>
     </div>
 
-    <!-- <footer>
-        <div class="footer_container">
-            <div class="BIO">
-                
-            </div>
-          <div class="container-row">
-            <h1>C</h1>
-            <h1>O</h1>
-          </div>
-          <div class="container-column">
-            <h1>D</h1>
-            <h1>E</h1>
-          </div>
-        </div>
-    </footer> -->
-    
     <footer>
         <div class="footer_container">
           <div class="personal-info">
@@ -121,7 +105,7 @@
             <h1>D</h1>
             <h1>E</h1>
           </div>
-          <div class="img_link">
+          <div class="img_link" id="img_link">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook.png" width="30px" alt="facebook"></a>
             <a href="https://telegram.org/" target="_blank"><img src="images/icon-telegram.png" width="30px" alt="telegram"></a>
             <a href="https://vk.com/" target="_blank"><img src="images/icon-vk.png" width="30px" alt="VK"></a>
@@ -133,8 +117,21 @@
       </footer>
       
 
-   
-       
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+      
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+          else
+            $("header").attr("class", "fixed");
+        });
+      </script>
 
     <script src="main.js"></script>
 </body>

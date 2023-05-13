@@ -3,14 +3,12 @@
 
 body{
     font-family:'Mulish', sans-serif;
-    
     color: #fff;
 }
 a{
     color: #fff;
     text-decoration: none;
 }
-
 
 .container {
    max-width: 1500px;
